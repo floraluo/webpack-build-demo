@@ -1,2 +1,4 @@
 node_modules/
 scripts/
+.DS_Store/
+packages/.DS_Store/
