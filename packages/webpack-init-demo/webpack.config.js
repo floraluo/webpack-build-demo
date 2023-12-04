@@ -13,12 +13,12 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 
 const config = {
-    entry: './src/index.js',
+    entry: './src/index.js', // 入口文件
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'), // 编译输入文件
     },
-    devServer: {
-        open: true,
+    devServer: { 
+        open: true, // true 服务启动后打开默认浏览器。还可以设置打开指定页面，指定浏览器等配置
         host: 'localhost',
     },
     plugins: [
